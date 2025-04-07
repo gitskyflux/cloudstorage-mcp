@@ -1,0 +1,23 @@
+{
+  "name": "cloudstorage-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Google Cloud Storage interactions",
+  "main": "build/index.js",
+  "bin": {
+    "cloudstorage-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc -w"
+  },
+  "keywords": ["mcp", "cloudstorage", "gcs"],
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "@google-cloud/storage": "^7.0.0",
+    "@types/node": "^18.19.84",
+    "typescript": "^5.8.2",
+    "zod": "^3.24.2"
+  }
+}
